@@ -14,7 +14,7 @@ public class MyRenderer implements GLSurfaceView.Renderer{
     private final float[] mViewMatrix = new float[16];//view matrix
     private final float[] mMVMatrix=new float[16];//model view matrix
     private final float[] mModelMatrix=new float[16];//model  matrix
-    private FloorPlan mfloorPlan;
+    private FloorPlan3D mfloorPlan;
     private float mYAngle=0;
     private float mXAngle=0;
     private float mZAngle=0;
@@ -24,7 +24,7 @@ public class MyRenderer implements GLSurfaceView.Renderer{
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
         // Set the background frame color to black
         GLES32.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-        mfloorPlan=new FloorPlan();
+        mfloorPlan=new FloorPlan3D();
     }
     public static void checkGlError(String glOperation) {
         int error;

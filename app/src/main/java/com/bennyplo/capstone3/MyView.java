@@ -27,12 +27,12 @@ public class MyView  extends GLSurfaceView {
                 mRenderer.setXAngle(pxangle); //spining about the y-axis
                 mRenderer.setYAngle(pyangle); //spining about the y-axis
                 requestRender();
-                /*pyangle+=1;//spining about the y-axis
+                pyangle+=1;//spining about the y-axis
                 if (pyangle>=360)pyangle=0;
                 pxangle++;//rotate about the x-axis
                 if (pxangle>=360)pxangle=0;
                 pzangle++;//rotate about the z-axis
-                if (pzangle>=360)pzangle=0;*/
+                if (pzangle>=360)pzangle=0;
             }
         };
         timer.scheduleAtFixedRate(task,1000,100);
